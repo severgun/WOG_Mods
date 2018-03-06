@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="WOG">
+    <Package ID="SwitchBackpack">
+            <Key ID="STR_SwitchBackpack">
+                <Czech>
+                    Změňte batoh
+                </Czech>
+                <English>
+                    Switch backpack
+                </English>
+                <Russian>
+                    Сменить рюкзак
+                </Russian>
+                <Spanish>
+                    Cambiar mochila
+                </Spanish>
+            </Key>
+            <Key ID="STR_SwitchBackpackTo">
+                <Czech>
+                    Změňte batoh na
+                </Czech>
+                <English>
+                    Switch backpack to
+                </English>
+                <Russian>
+                    Сменить рюкзак на
+                </Russian>
+                <Spanish>
+                    Cambiar la mochila a
+                </Spanish>
+            </Key>
+    </Package>
+</Project>
