@@ -7,7 +7,7 @@ class CfgPatches
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={"ace_rearm","ace_medical"};
+		requiredAddons[]={"ace_medical"};
 	};
 };
 

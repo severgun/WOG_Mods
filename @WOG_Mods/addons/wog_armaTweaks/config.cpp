@@ -12,7 +12,8 @@ class CfgPatches
 };
 
 class RscMapControl;
-class RscDisplayMainMap {
+class RscDisplayMainMap
+{
     // Tweak map styling
     class controlsBackground {
         class CA_Map: RscMapControl {
@@ -24,6 +25,7 @@ class RscDisplayMainMap {
 };
 
 class RscChatListDefault
-    {
-        colorGlobalChannel[] = {1, 0, 0, 1};
-    };
+{
+    //Global chat nickname color - RED
+    colorGlobalChannel[] = {1, 0, 0, 1};
+};
