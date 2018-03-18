@@ -7,7 +7,7 @@ class CfgPatches
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={"ace_medical"};
+		requiredAddons[]={"ace_map","ace_medical"};
 	};
 };
 
@@ -25,4 +25,15 @@ class CfgFunctions
 	};
 };
 
-
+class RscObject;
+class RscDisplayMainMap
+{
+	class objects
+	{
+		class Compass: RscObject
+		{
+			scale = 0.7;
+			zoomDuration = 0.1;
+		};
+	};
+};
