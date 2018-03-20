@@ -37,3 +37,9 @@ class RscDisplayMainMap
 		};
 	};
 };
+
+class CfgWeapons
+{
+	#include "ace_optics.hpp"
+	#include "ace_nightvision.hpp"
+}
