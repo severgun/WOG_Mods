@@ -53,8 +53,8 @@ swt_markers_MapMouseDown = {
     _shift = _this select 4;
     _ctrlKey = _this select 5;
     _alt = _this select 6;
-    if (!_shift and !_alt and _ctrlKey and ((_this select 1) == 0)) then {
-    	["fast",[]] call swt_markers_sys_sendMark;
+    if (_shift and !_alt and _ctrlKey and ((_this select 1) == 0)) then {
+    	["fast",[]] call swt_markers_sys_sendMark; //Ctrl+Shift for A3 map drawing compat
     } else {
 		if (!_shift and !_ctrlKey and _alt and ((_this select 1) == 0)) then {
 			{
@@ -106,7 +106,7 @@ swt_markers_MapMouseDown = {
 			    	"SWT_MARKERS LOCAL ELLIPSE" setMarkerColorLocal swt_markers_mark_color;
 			    	"SWT_MARKERS LOCAL ELLIPSE" setMarkerSizeLocal [0,0];
 			    } else {
-					if (_shift and _ctrlKey and !_alt and ((_this select 1) == 0)) then {
+					if (_shift and _ctrlKey and _alt and ((_this select 1) == 0)) then { // crtl + shift + alt for marker on road. Who ever use this?
 						_pos = (_display displayCtrl 51) ctrlMapScreenToWorld _pos_click;
 						_roads = _pos nearRoads 50;
 						_min = _roads select 0;
