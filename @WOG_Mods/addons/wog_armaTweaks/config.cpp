@@ -11,21 +11,19 @@ class CfgPatches
     };
 };
 
-class RscMapControl;
-class RscDisplayMainMap
-{
-    // Tweak map styling
-    class controlsBackground {
-        class CA_Map: RscMapControl {
-            colorGrid[] = {0.05, 0.1, 0, 1};
-            colorGridMap[] = {0.05, 0.1, 0, 1};
-            sizeExGrid = 0.055;
-        };
-    };
-};
-
 class RscChatListDefault
 {
-    //Global chat nickname color - RED
-    colorGlobalChannel[] = {1, 0, 0, 1};
+    //Global chat nickname color - Orange
+    colorGlobalChannel[] = {1, 0.35, 0, 1};
+};
+
+class RscChatListMission: RscChatListDefault
+{
+    //Chat moved 2 sreens down. Get rid of reconnect messages.
+    y = "2 * safezoneH + safezoneY";
+};
+
+class RscChatListMap: RscChatListDefault
+{
+    y = "2 * safezoneH + safezoneY";
 };
