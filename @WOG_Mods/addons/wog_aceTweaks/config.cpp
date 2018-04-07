@@ -25,21 +25,10 @@ class CfgFunctions
 	};
 };
 
-class RscObject;
-class RscDisplayMainMap
-{
-	class objects
-	{
-		class Compass: RscObject
-		{
-			scale = 0.7;
-			zoomDuration = 0.1;
-		};
-	};
-};
-
 class CfgWeapons
 {
 	#include "ace_optics.hpp"
 	#include "ace_nightvision.hpp"
-}
+};
+
+#include "ace_map.hpp"
