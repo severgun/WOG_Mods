@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class
+    class wog_rhsTweaks
     {
         units[] = {};
         weapons[] = {};
