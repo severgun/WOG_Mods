@@ -61,7 +61,7 @@ switch (_action) do {
 		// Ограничен разер вводимого текста
 		_inputText = ctrlText (_displayMark displayctrl 203);
 		if (time > 5) then {
-			_inputText = toString ((toArray _inputText) select [0,15]);
+			_inputText = toString ((toArray _inputText) select [0,50]);
 		};
 		_text =  _text + _inputText;
 
@@ -72,7 +72,7 @@ switch (_action) do {
 		_WorldCoord = (_displayMap displayCtrl 51) ctrlMapScreenToWorld swt_markers_pos_m;
 
     	if (time > 5) then {
-    		if (swt_markers_save_text) then {_text = _text + (swt_markers_text select [0,15])};
+    		if (swt_markers_save_text) then {_text = _text + (swt_markers_text select [0,50])};
     	} else {
             if (swt_markers_save_text) then {_text = _text + swt_markers_text};
         };
