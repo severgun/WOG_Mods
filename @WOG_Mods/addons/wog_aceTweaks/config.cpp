@@ -11,6 +11,14 @@ class CfgPatches
 	};
 };
 
+class Extended_PostInit_EventHandlers
+{
+	class wog3_killtracker
+	{
+		init = "call compile preProcessFileLineNumbers '\wog_aceTweaks\functions\wog3_killtracker_XEH_postInit.sqf'";
+	};
+};
+
 class CfgFunctions
 {
 	class ace_medical
