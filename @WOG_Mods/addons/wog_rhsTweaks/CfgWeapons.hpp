@@ -10,5 +10,6 @@ class CfgWeapons
         // opticsZoomMax = 0.0625;
         // opticsZoomInit = 0.0625;
         descriptionShort = "Magnification: 7x";
+        modelOptics="\A3\weapons_f\reticle\optics_binoculars";
     };
 };
