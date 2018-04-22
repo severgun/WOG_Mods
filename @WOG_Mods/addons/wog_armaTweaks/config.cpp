@@ -5,7 +5,7 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = 0.1;
-        requiredAddons[] = {"a3_ui_f","a3_ui_f_bootcamp","a3_ui_f_curator","a3_ui_f_data","a3_ui_f_exp","a3_ui_f_exp_a","a3_ui_f_heli","a3_ui_f_kart","a3_ui_f_mark","a3_ui_f_mp_mark","a3_uifonts_f"};
+        requiredAddons[] = {"A3_Data_F_Tank_Loadorder"};
         authors[] = {"Liquid"};
         url = "https://wogames.info";
     };
