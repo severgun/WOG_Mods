@@ -3,7 +3,7 @@ swt_markers_allMarkers_params = [];
 swt_markers_DisableLoc = false;
 
 swt_markers_check_tfar_lr = {
-	if ( !(missionNamespace getVariable ["sideChannel_with_TFAR_LR", false]) ) exitWith { true };
+	if ( !(missionNamespace getVariable ["sideChannel_with_TFAR_LR", true]) ) exitWith { true };
 	_go = true;
 	if (time > 5) then {
 		_go = false;
