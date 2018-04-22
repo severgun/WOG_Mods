@@ -106,7 +106,7 @@ swt_markers_MapMouseDown = {
 			    	"SWT_MARKERS LOCAL ELLIPSE" setMarkerColorLocal swt_markers_mark_color;
 			    	"SWT_MARKERS LOCAL ELLIPSE" setMarkerSizeLocal [0,0];
 			    } else {
-					if (_shift and _ctrlKey and !_alt and ((_this select 1) == 0)) then {
+					if (_shift and _ctrlKey and _alt and ((_this select 1) == 0)) then { // crtl + shift + alt for marker on road. Who ever use this?
 						_pos = (_display displayCtrl 51) ctrlMapScreenToWorld _pos_click;
 						_roads = _pos nearRoads 50;
 						_min = _roads select 0;
