@@ -76,6 +76,7 @@ if(_activated) then {
     if (isServer) then {
         [] spawn {
             setViewDistance wmt_param_MaxViewDistance;
+            onPlayerConnected {setTerrainGrid 3.125};
             if (wmt_param_GenerateFrequencies == 1) then {
                 [] spawn WMT_fnc_DefaultFreqsServer;
             };
