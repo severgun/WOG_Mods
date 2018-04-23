@@ -1,0 +1,6 @@
+///<'Suppress_sys.pbo' properties via Mikero's dos tools, dll version 6.44>///
+prefix=LAxemann\L_Suppress\addons\Suppress_sys
+Mikero=DePbo.dll
+//Pbo Type is: Arma Addon
+//Sha: 'F99B0197970667A801F0552F11C62305B45DF660'
+//////</properties>//////
