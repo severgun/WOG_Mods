@@ -76,7 +76,7 @@ if(_activated) then {
     if (isServer) then {
         [] spawn {
             setViewDistance wmt_param_MaxViewDistance;
-            onPlayerConnected {setTerrainGrid 3.125};
+            setTerrainGrid 1;
             if (wmt_param_GenerateFrequencies == 1) then {
                 [] spawn WMT_fnc_DefaultFreqsServer;
             };
@@ -188,6 +188,8 @@ if(_activated) then {
                 waitUntil{sleep 0.36; !(isNull (findDisplay 46))};
                 // Show list of vehicle crew
                 (findDisplay 46) displayAddEventHandler ["MouseZChanged","_this call WMT_fnc_KeyHandlerShowCrew;"];
+                setTerrainGrid 1;
+                onPlayerConnected {setTerrainGrid 1};
             };
 
             [] call WMT_fnc_UpdateMainActions;
